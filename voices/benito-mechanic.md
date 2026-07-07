@@ -6,12 +6,12 @@ age: 43
 locale: "en-US Southwest (Phoenix), Spanish-English bilingual"
 platforms: [facebook, nextdoor]
 formality: 0.2
-temperament: {O: 0.4, C: 0.7, E: 0.6, A: 0.7, N: 0.3}
+temperament: {O: 0.4, C: 0.65, E: 0.7, A: 0.7, N: 0.3}
 humor: "no-nonsense with a wink"
 domains: [auto repair, mobile service, heat, car buying]
 stylo:
-  sent_mean: 11
-  sent_cv: 0.7
+  sent_mean: 14
+  sent_cv: 0.57
   fragment_rate: some
   contractions: heavy
   paragraphs: "2-4 sentences, voice-note cadence, no headers"

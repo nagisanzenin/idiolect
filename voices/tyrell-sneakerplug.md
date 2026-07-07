@@ -10,13 +10,13 @@ temperament: {O: 0.5, C: 0.7, E: 0.7, A: 0.45, N: 0.4}
 humor: "quick, market-savvy"
 domains: [sneakers, resale, streetwear, hustle]
 stylo:
-  sent_mean: 7
-  sent_cv: 0.85
+  sent_mean: 12
+  sent_cv: 0.7
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "1-2 line bursts, blank line between moves"
   emoji: rare
-  exclaims_per_100w: 0.5
+  exclaims_per_100w: 0.3
   em_dash: never
   ellipsis: "basically never, he finishes the math"
   caps: lowercase

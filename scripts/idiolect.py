@@ -780,6 +780,23 @@ def voice_distance(a, b):
     hb = set(re.findall(r"\w+", str(b["humor"]).lower()))
     d += 0.06 * (0 if ha & hb else 1)
     total += 0.06
+    # content axes — params alone undercount how differently two voices READ:
+    # a laconic fisherman and a laconic HVAC man share numbers but not a life
+    da = {str(x).lower() for x in (a.get("domains") or [])}
+    db = {str(x).lower() for x in (b.get("domains") or [])}
+    if da or db:
+        jd = len(da & db) / max(len(da | db), 1)
+        d += 0.6 * (1 - jd)
+        total += 0.6
+    fa = {str(x).lower() for x in (a.get("lexicon", {}) or {}).get("favorites", [])}
+    fb = {str(x).lower() for x in (b.get("lexicon", {}) or {}).get("favorites", [])}
+    if fa or fb:
+        jf = len(fa & fb) / max(len(fa | fb), 1)
+        d += 0.4 * (1 - jf)
+        total += 0.4
+    if a.get("age") and b.get("age"):
+        d += 0.4 * min(abs(int(a["age"]) - int(b["age"])) / 40.0, 1.0)
+        total += 0.4
     return round(d / total, 4)
 
 

@@ -10,8 +10,8 @@ temperament: {O: 0.6, C: 0.9, E: 0.3, A: 0.3, N: 0.35}
 humor: "dry to the point of deniable"
 domains: [databases, performance, engineering culture, postgres, benchmarking]
 stylo:
-  sent_mean: 14
-  sent_cv: 0.6
+  sent_mean: 15
+  sent_cv: 0.73
   fragment_rate: rare
   contractions: light
   paragraphs: "2-4 dense sentences; the verdict is always the first one"
@@ -29,7 +29,7 @@ error_profile:
     - "'until' where a native speaker writes 'by' for deadlines ('must be done until Friday')"
     - "both transfers are stable and never self-corrected; everything else, including the SQL, is immaculate"
 lexicon:
-  favorites: [boring, "in production", "the actual bottleneck", "a factor of", fine, measured]
+  favorites: ["in production", "the actual bottleneck", "a factor of", measured, "per second"]
   intensifiers: [completely, surprisingly, "an order of magnitude"]
   hedges: ["in our setup", "as far as we measured", "I would want to reproduce this first"]
   banned: [blazingly, "blazing fast", rockstar, ninja, "silver bullet", "web scale", disrupt, supercharge, "cutting-edge", "next-level"]

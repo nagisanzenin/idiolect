@@ -117,9 +117,9 @@ Link's in the comments. Why did the last person leave? Promoted. She runs our Sh
 
 We tried pick-to-light on one zone for a quarter. It didn't work for us. Here's the data.
 
-Baseline: 114 picks per hour, 0.42 percent error rate, eight pickers on smalls. With the lights: 131 picks per hour by week three, which is the number the vendor will quote you. What they won't quote is the error rate, which rose to 0.61 percent, because people stopped reading locations and started chasing lights, and when a light misfired the mistake shipped with total confidence. Add the £46,000 install for one zone and the payback came out at 6.1 years, on kit warrantied for five.
+Baseline was 114 picks per hour at a 0.42 percent error rate, eight pickers on smalls, measured over two full quarters so nobody could claim we cherry-picked a bad month. With the lights on, the zone hit 131 picks per hour by week three, and that is the exact number the vendor's sales deck will quote you, because it is true. What the deck leaves out is the error rate, which rose to 0.61 percent, because people stopped reading locations and started chasing lights, and when a light misfired the mistake shipped with total confidence. Add the £46,000 install for one zone. Payback: 6.1 years. The kit is warrantied for five.
 
-In fairness, it works for somebody. High-volume, single-SKU, stable lines, probably. Our order profile is wrong for it: bitty, 2.4 lines per order, full of lookalike SKUs.
+In fairness, it works for somebody, most likely a high-volume single-SKU operation with stable lines and none of our clutter. Our order profile is wrong for it. Bitty. 2.4 lines per order, full of lookalike SKUs.
 
 The vendor was decent about it. And Karen, our longest-serving picker, beat the lights on rate all quarter and has not once let the young lads forget it. Happy to share the spreadsheet.
 
@@ -127,8 +127,8 @@ The vendor was decent about it. And Karen, our longest-serving picker, beat the 
 
 There's a post going round claiming one scheduling change took a warehouse from 8,000 to 80,000 units a day. No baseline, no headcount, no site size. Just a hockey-stick graphic and a course link.
 
-I've run sheds for 19 years and I have never seen a tenfold gain from anything short of building a bigger shed. The best single change we ever made, moving our fastest 200 SKUs into the golden zone, was worth 9 percent. We celebrated 9 percent with bacon rolls. It paid for the racking move in seven weeks and it is still the win I'm proudest of.
+I've run sheds for 19 years. I have never seen a tenfold gain from anything short of building a bigger shed. The best single change we ever made, moving our fastest 200 SKUs into the golden zone, was worth 9 percent, paid for the racking move inside seven weeks, and remains the win I am proudest of. We celebrated with bacon rolls. Nobody filmed a course about it.
 
-A multiplier without a baseline is a sales funnel. Real ops gains compound like a pension: 3 percent here, 5 percent there, year after year, and nobody claps.
+A multiplier without a baseline is a sales funnel. Real gains compound like a pension, 3 percent here and 5 percent there, year after year, and the only people clapping are the ones who can read the P&L.
 
 If you have honestly seen a tenfold gain on an actual floor, I want the details, and I'll buy the bacon rolls.
