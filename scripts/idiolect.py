@@ -404,6 +404,20 @@ def line_of(text, pos):
     return text.count("\n", 0, pos) + 1
 
 
+def _stem(t):
+    """Tiny plural/possessive stemmer for topical matching (pick), not linguistics."""
+    t = t.lower().rstrip("'’")
+    if t.endswith("'s") or t.endswith("’s"):
+        t = t[:-2]
+    if t.endswith("ies") and len(t) > 4:
+        return t[:-3] + "y"
+    if t.endswith("es") and len(t) > 5 and not t.endswith("ses"):
+        return t[:-2]
+    if t.endswith("s") and not t.endswith("ss") and len(t) > 4:
+        return t[:-1]
+    return t
+
+
 PLATFORM_ADJUST = {
     # (emoji_warn_per_100w, hashtag_warn)
     "instagram": (4.0, 5), "tiktok": (4.0, 6), "threads": (2.5, 3),
@@ -576,19 +590,24 @@ def scan_text(text, platform=None, tells=None):
     band = next(b["band"] for b in cfg["bands"] if score <= b["max"])
     hits.sort(key=lambda h: -h["weight"])
     del stats["sent_lens"]
-    return {
+    rep = {
         "score": score, "band": band, "raw_points": round(raw, 1),
         "cluster_categories": ncat, "cluster_multiplier": mult,
         "platform": platform, "hits": hits, "human_texture": texture,
         "stats": stats,
         "disclaimer": "linter for drafts, not a detector for accusing people",
     }
+    if stats["words"] < 20:
+        rep["note"] = "text under 20 words — too short for a meaningful verdict"
+    return rep
 
 
 def fmt_scan(rep):
     lines = [f"score {rep['score']}/100  band={rep['band']}  "
              f"(raw {rep['raw_points']}, {rep['cluster_categories']} tell categories, "
              f"x{rep['cluster_multiplier']})"]
+    if rep.get("note"):
+        lines.append(f"note: {rep['note']}")
     if rep["hits"]:
         lines.append("tells:")
         for h in rep["hits"][:25]:
@@ -921,7 +940,8 @@ def overlap_files(paths):
         with open(p, encoding="utf-8") as f:
             txt = f.read()
         toks = [t.lower() for t in words_of(strip_code(txt))]
-        docs.append({"path": p, "tokens": toks, "g5": ngrams(toks, 5)})
+        docs.append({"path": p, "tokens": toks,
+                     "g5": ngrams(toks, 5), "g4": ngrams(toks, 4)})
     pairs = []
     for i in range(len(docs)):
         for j in range(i + 1, len(docs)):
@@ -929,9 +949,21 @@ def overlap_files(paths):
             inter = a["g5"] & b["g5"]
             union = a["g5"] | b["g5"]
             jac = round(len(inter) / max(len(union), 1), 4)
-            shared = sorted(inter, key=len, reverse=True)[:5]
+            shared4 = a["g4"] & b["g4"]
+            # longest shared consecutive run, for the report
+            longest = ""
+            for n in range(10, 3, -1):
+                common = ngrams(a["tokens"], n) & ngrams(b["tokens"], n)
+                if common:
+                    longest = max(common, key=len)
+                    break
+            flag = jac > 0.12 or len(shared4) >= 5 or len(longest.split()) >= 6
+            shared = sorted(inter | (shared4 if len(shared4) >= 3 else set()),
+                            key=len, reverse=True)[:5]
             pairs.append({"a": a["path"], "b": b["path"], "jaccard5": jac,
-                          "flag": jac > 0.12, "shared_examples": shared})
+                          "shared_4grams": len(shared4),
+                          "longest_shared_run": longest,
+                          "flag": flag, "shared_examples": shared})
     return pairs
 
 
@@ -1164,7 +1196,9 @@ def cmd_pick(args):
     if args.brief_file:
         with open(args.brief_file, encoding="utf-8") as f:
             brief_toks = {t.lower() for t in words_of(f.read()) if len(t) > 3}
-    recent = [e["voice"] for e in ledger_read()[-args.recent_window:]]
+    # note: [-0:] would be the WHOLE list, i.e. maximum penalty for "window 0"
+    recent = ([e["voice"] for e in ledger_read()[-args.recent_window:]]
+              if args.recent_window > 0 else [])
     scored = []
     for slug, fm in fms.items():
         if slug in (args.exclude or []):
@@ -1185,7 +1219,15 @@ def cmd_pick(args):
             for d in (fm.get("domains") or []):
                 dom_toks |= {t.lower() for t in words_of(str(d))}
             dom_toks |= {t.lower() for t in words_of(str(fm.get("archetype", "")))}
-            score += 1.5 * len(brief_toks & dom_toks) / max(len(dom_toks), 1) * 3
+            dom_toks |= {t.lower() for t in words_of(str(fm.get("display", "")))}
+            # stem both sides so ceramic/ceramics/candle(s) meet; long tokens
+            # (>=6 chars: ceramic, studio, glaze) outweigh generic short ones
+            bstems = {_stem(t) for t in brief_toks}
+            raw = 0.0
+            for t in dom_toks:
+                if _stem(t) in bstems:
+                    raw += 2.0 if len(t) >= 6 else 1.0
+            score += 1.5 * raw / max(len(dom_toks), 1) * 3
         if slug in recent:
             score -= 1.0 * (recent.count(slug))
         scored.append((round(score, 3), slug))
@@ -1236,8 +1278,11 @@ def cmd_overlap(args):
     else:
         for p in pairs:
             flag = "  << OVERLAP" if p["flag"] else ""
-            print(f"jaccard5={p['jaccard5']:.4f}  {os.path.basename(p['a'])} <-> "
-                  f"{os.path.basename(p['b'])}{flag}")
+            extra = (f"  longest-run=\"{p['longest_shared_run']}\""
+                     if p["longest_shared_run"] else "")
+            print(f"jaccard5={p['jaccard5']:.4f} shared4={p['shared_4grams']}  "
+                  f"{os.path.basename(p['a'])} <-> {os.path.basename(p['b'])}"
+                  f"{flag}{extra}")
             for s in (p["shared_examples"] if p["flag"] else []):
                 print(f"    shared: \"{s}\"")
     if any(p["flag"] for p in pairs):

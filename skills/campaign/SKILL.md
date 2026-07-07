@@ -21,7 +21,7 @@ CID="<campaign-name-or-date-slug>"
 
 1. **Cast the voices.** Brief to a scratch file, then
    `$IDIO pick --platform <p> --brief-file <f> --n <N> --distinct --json`
-   (per-platform picks if the campaign spans platforms). `--distinct` does greedy max-distance casting — announce the cast in one line each: who, platform, why they fit the brief. If the user named people fuzzily ("use the nurse and the sneaker guy"), resolve those against `$IDIO voices --json` first and fill the rest of the cast with `pick`. Nothing here requires the user to know a slug or a flag.
+   (per-platform picks if the campaign spans platforms — and pass `--exclude` with every already-cast slug on each subsequent pick, or the same voice will happily win two platforms). `--distinct` does greedy max-distance casting — announce the cast in one line each: who, platform, why they fit the brief. If the user named people fuzzily ("use the nurse and the sneaker guy"), resolve those against `$IDIO voices --json` first and fill the rest of the cast with `pick`. Nothing here requires the user to know a slug or a flag.
 
 2. **Pre-assign structure.** Build a rotation table before any writing: no two posts share (opener, shape) even across different voices; lengths vary. This is the campaign-level variance guard; the per-voice ledger check comes free in step 3.
 
