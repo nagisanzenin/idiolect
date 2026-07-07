@@ -1,0 +1,9 @@
+Founder here, since the rules ask for disclosure. 11 months in on a QA tool for support chatbots.
+
+We almost died in March. Burn was $6k/mo against $2.1k MRR and my cofounder went back to consulting three days a week to stretch us. What saved it wasn't a pivot, it was embarrassing: I finally called the 14 customers who churned in Q1. Eight picked up. Seven said the same sentence, more or less. "It flagged too much stuff that wasn't actually broken."
+
+Our precision was garbage and I'd been tuning for recall the whole time because it demoed better.
+
+Shipped a confidence threshold slider in April (ugly, literally a slider), false positives dropped about 70% by our own logs, and 4 of those churned customers came back when I emailed them a screenshot.
+
+MRR is $5.8k now. Not a rocket ship. But the lesson cost me $18k of runway so someone else can have it free: churn interviews beat roadmaps, and demos lie.

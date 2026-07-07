@@ -1,0 +1,9 @@
+We killed our internship program's GPA cutoff in January. Some numbers from the first cohort since people asked.
+
+Applications went from 210 to 340. The interview-pass rate was flat, 22% versus 21% the prior year, which was the thing legal was nervous about. It did not drop.
+
+Two of the five interns we hired would have been filtered out under the old 3.5 rule. One of them found a race condition in our billing retry logic during week 6. She had a 2.9 and a part-time job through most of school, which in hindsight explains both numbers.
+
+The cutoff was never measuring ability. It was measuring who could afford to treat college as their only job.
+
+Happy to share the rubric we replaced it with, it's one page and stolen shamelessly from a peer company's public one.

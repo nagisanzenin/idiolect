@@ -1,0 +1,9 @@
+month 7 of the screenshot app. some numbers because i said i'd post them good or bad
+
+$391 MRR, 44 paying. churn was brutal in june, lost 9 subs and 6 of them never opened the app after day 2
+
+so onboarding was the leak. spent two weekends rebuilding it, cut the setup from 11 steps to 3, moved the folder-picker to after first search instead of before
+
+too early to declare victory but week 1 of july: 12 trials, 5 converted. june was 3 of 14
+
+the boring fix beat the feature i wanted to build. as usual

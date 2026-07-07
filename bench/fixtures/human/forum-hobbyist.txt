@@ -1,0 +1,11 @@
+Finally sorted the flickering on my HO layout's yard lights, posting because three threads here got me 80% of the way and none had the ending.
+
+Symptoms: six LED lamp posts on a shared bus, random flicker on two of them, worse when the switcher crossed frog 7. Everyone said dirty track. Cleaned it, no change.
+
+It was the bus splice under the yard throat. A 2014-era suitcase connector I'd have sworn was fine. Resistance read 0.4 ohms cold and jumped past 3 when I flexed the board, which matches the seasonal humidity swing here in Sacramento.
+
+Soldered a proper pigtail, heat shrink, done. Four evenings of chasing a 90-cent part.
+
+If your flicker correlates with a specific loco crossing a specific frog, check your splices before your railheads. The frog was just the vibration source.
+
+Regards, Walt's neighbor Dave (he'll deny lending me the multimeter)

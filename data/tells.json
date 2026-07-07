@@ -161,7 +161,19 @@
       {"p": "profound", "w": 1.5, "era": "gpt4"},
       {"p": "remarkable", "w": 1.5, "era": "gpt4"},
       {"p": "renowned", "w": 1.5, "era": "gpt4"},
-      {"p": "groundbreaking", "w": 1.5, "era": "gpt4", "note": "figurative"}
+      {"p": "groundbreaking", "w": 1.5, "era": "gpt4", "note": "figurative"},
+      {"p": "felt compelled to share", "w": 2, "era": "all", "note": "astroturf-testimonial formula"},
+      {"p": "i was skeptical at first", "w": 2, "era": "all", "note": "testimonial arc formula"},
+      {"p": "highly recommend giving it a try", "w": 2, "era": "all"},
+      {"p": "would love to hear your", "w": 1.5, "era": "all", "note": "engagement-close formula"},
+      {"p": "as someone who has", "w": 1.5, "era": "all", "note": "credential-priming opener"},
+      {"p": "completely transformed my", "w": 2, "era": "all"},
+      {"p": "countless hours", "w": 1.5, "era": "all"},
+      {"p": "exceeded my expectations", "w": 1.5, "era": "all"},
+      {"p": "did not disappoint", "w": 1.5, "era": "all"},
+      {"p": "user-friendly interface", "w": 1.5, "era": "all"},
+      {"p": "incredibly responsive", "w": 1.5, "era": "all"},
+      {"p": "if you're on the fence", "w": 2, "era": "all"}
     ],
     "t3": [
       {"p": "enhance", "w": 0.5, "era": "gpt5", "note": "gpt5-era residue but human-common"},
