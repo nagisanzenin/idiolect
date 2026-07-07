@@ -752,13 +752,15 @@ def voice_distance(a, b):
         nonlocal d, total
         d += w * x
         total += w
-    num(abs(float(a["formality"]) - float(b["formality"])), 2.0)
+    # numeric diffs are scaled by realistic roster spread so a maximally
+    # different pair approaches 1.0 on each component, not 0.2
+    num(min(abs(float(a["formality"]) - float(b["formality"])) / 0.85, 1.0), 2.0)
     ta, tb = a["temperament"], b["temperament"]
     for k in "OCEAN":
-        num(abs(float(ta[k]) - float(tb[k])), 0.3)
-    num(abs(float(a["stylo"]["sent_mean"]) - float(b["stylo"]["sent_mean"])) / 30.0, 1.0)
-    num(abs(float(a["stylo"]["sent_cv"]) - float(b["stylo"]["sent_cv"])), 1.0)
-    num(min(abs(float(a["stylo"]["exclaims_per_100w"]) - float(b["stylo"]["exclaims_per_100w"])) / 3.0, 1.0), 0.5)
+        num(min(abs(float(ta[k]) - float(tb[k])) / 0.6, 1.0), 0.3)
+    num(min(abs(float(a["stylo"]["sent_mean"]) - float(b["stylo"]["sent_mean"])) / 17.0, 1.0), 1.0)
+    num(min(abs(float(a["stylo"]["sent_cv"]) - float(b["stylo"]["sent_cv"])) / 0.35, 1.0), 1.0)
+    num(min(abs(float(a["stylo"]["exclaims_per_100w"]) - float(b["stylo"]["exclaims_per_100w"])) / 2.5, 1.0), 0.5)
     for f, w in CAT_FIELDS:
         d += w * (0 if a["stylo"].get(f) == b["stylo"].get(f) else 1)
         total += w
