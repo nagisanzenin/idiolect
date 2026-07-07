@@ -1,0 +1,14 @@
+{
+  "name": "idiolect",
+  "description": "Voice-true human writing for Claude Code — 60 built-in voice profiles, a deterministic AI-tell scanner, and a closed verify-revise loop.",
+  "owner": {
+    "name": "Quan Duong"
+  },
+  "plugins": [
+    {
+      "name": "idiolect",
+      "source": "./",
+      "description": "A roster of 60 fully-specified human voice profiles plus a deterministic AI-tell scanner. Write, humanize, audit, and mass-produce social posts that read as distinct, genuine people — verified by stylometry, not vibes."
+    }
+  ]
+}

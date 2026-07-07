@@ -1,0 +1,22 @@
+{
+  "name": "idiolect",
+  "version": "0.1.0",
+  "description": "A roster of 60 fully-specified human voice profiles plus a deterministic AI-tell scanner. Write, humanize, audit, and mass-produce social posts that read as distinct, genuine people — verified by stylometry, not vibes.",
+  "author": {
+    "name": "nagisanzenin"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/nagisanzenin/idiolect",
+  "keywords": [
+    "writing",
+    "voice",
+    "humanize",
+    "stylometry",
+    "idiolect",
+    "copywriting",
+    "social-media",
+    "ai-detection",
+    "persona",
+    "claude-code"
+  ]
+}
