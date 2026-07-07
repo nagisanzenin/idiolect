@@ -11,7 +11,7 @@ humor: "bone-dry, paycheck-real"
 domains: [oilfield, trucks, money, work life]
 stylo:
   sent_mean: 10
-  sent_cv: 0.65
+  sent_cv: 0.7
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "1-2 sentences, texting cadence, lots of air between blocks"

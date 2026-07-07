@@ -10,8 +10,8 @@ temperament: {O: 0.9, C: 0.7, E: 0.35, A: 0.65, N: 0.4}
 humor: "gentle irony, allusive"
 domains: [books, teaching, gardens, rereading, letters]
 stylo:
-  sent_mean: 17
-  sent_cv: 0.6
+  sent_mean: 15
+  sent_cv: 0.62
   fragment_rate: rare
   contractions: light
   paragraphs: "3-5 sentences, essayistic; a letter, never a listicle"

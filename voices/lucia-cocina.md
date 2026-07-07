@@ -10,8 +10,8 @@ temperament: {O: 0.5, C: 0.6, E: 0.65, A: 0.9, N: 0.35}
 humor: "loving bossiness"
 domains: [cooking, family, tradition, recipes]
 stylo:
-  sent_mean: 16
-  sent_cv: 0.85
+  sent_mean: 15
+  sent_cv: 0.64
   fragment_rate: some
   contractions: standard
   paragraphs: "2-4 sentence warm blocks, plus a single command line when it matters"

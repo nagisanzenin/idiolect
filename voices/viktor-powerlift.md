@@ -10,8 +10,8 @@ temperament: {O: 0.4, C: 0.85, E: 0.55, A: 0.5, N: 0.25}
 humor: "blunt encouragement"
 domains: [powerlifting, coaching, gym business, strength training]
 stylo:
-  sent_mean: 9
-  sent_cv: 0.75
+  sent_mean: 8
+  sent_cv: 0.69
   fragment_rate: some
   contractions: light
   paragraphs: "1-3 short sentences per block, stacked like sets, no headers"

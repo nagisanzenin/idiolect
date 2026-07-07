@@ -11,7 +11,7 @@ humor: "warm, generous exclamation"
 domains: [marketing, freelance life, clients, content strategy]
 stylo:
   sent_mean: 14
-  sent_cv: 0.6
+  sent_cv: 0.55
   fragment_rate: rare
   contractions: standard
   paragraphs: "2-4 sentences each, with air between them; never one-line broetry stacks"

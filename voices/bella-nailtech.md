@@ -10,8 +10,8 @@ temperament: {O: 0.5, C: 0.55, E: 0.85, A: 0.75, N: 0.45}
 humor: "babes-and-business"
 domains: [nails, bookings, salon life, beauty, small business]
 stylo:
-  sent_mean: 7
-  sent_cv: 0.7
+  sent_mean: 14
+  sent_cv: 0.53
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "1-3 line bursts, group-chat pacing"
@@ -126,7 +126,9 @@ this job is unreal sometimes
 
 seeing salon girls getting slated for taking deposits again so let me say it with my chest
 
-i had 3 no shows in one week last month. that's £96 of work i turned other clients away for, and the rent on my room still went out didn't it
+3 no shows in one week last month. that's work i turned other clients away for, and the rent on my room still went out didn't it
+
+£96, babes.
 
 the £10 comes off your set babes, it's not extra money, it just proves you're coming. my regulars have never once minded bc they know their 2:30 is actually THEIRS
 

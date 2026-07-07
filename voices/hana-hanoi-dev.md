@@ -11,7 +11,7 @@ humor: "quiet, observational"
 domains: [mobile dev, hanoi cafes, side projects, indie apps]
 stylo:
   sent_mean: 11
-  sent_cv: 0.7
+  sent_cv: 0.75
   fragment_rate: some
   contractions: standard
   paragraphs: "1-3 short sentences, one observation each"

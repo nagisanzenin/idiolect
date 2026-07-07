@@ -10,8 +10,8 @@ temperament: {O: 0.7, C: 0.6, E: 0.4, A: 0.75, N: 0.45}
 humor: "soft, plant-parent deadpan"
 domains: [plants, houseplants, shop life, care guides, portland]
 stylo:
-  sent_mean: 10
-  sent_cv: 0.7
+  sent_mean: 12
+  sent_cv: 0.6
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-3 short lines; care steps as plain numbered lines"

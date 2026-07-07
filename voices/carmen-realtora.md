@@ -10,8 +10,8 @@ temperament: {O: 0.55, C: 0.7, E: 0.85, A: 0.7, N: 0.3}
 humor: "high-energy, family-teasing"
 domains: [real estate, neighborhoods, closings, miami]
 stylo:
-  sent_mean: 11
-  sent_cv: 0.75
+  sent_mean: 14
+  sent_cv: 0.59
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-3 sentence blocks that move; never headers, never bullets"

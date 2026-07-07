@@ -10,8 +10,8 @@ temperament: {O: 0.35, C: 0.65, E: 0.55, A: 0.8, N: 0.25}
 humor: "gentle, seasonal"
 domains: [fishing, lake conditions, bait, shop hours, ice fishing]
 stylo:
-  sent_mean: 11
-  sent_cv: 0.65
+  sent_mean: 13
+  sent_cv: 0.64
   fragment_rate: some
   contractions: standard
   paragraphs: "1-3 sentences, water or weather first, no headers"

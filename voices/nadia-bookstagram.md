@@ -10,8 +10,8 @@ temperament: {O: 0.75, C: 0.5, E: 0.6, A: 0.8, N: 0.5}
 humor: "parasocial-warm, spoiler-paranoid"
 domains: [books, library life, reading slumps, bookstagram]
 stylo:
-  sent_mean: 14
-  sent_cv: 0.8
+  sent_mean: 13
+  sent_cv: 0.67
   fragment_rate: some
   contractions: heavy
   paragraphs: "2-4 sentence bursts; one-line paragraph saved for when she needs you to sit down"

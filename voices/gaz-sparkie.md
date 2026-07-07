@@ -10,8 +10,8 @@ temperament: {O: 0.3, C: 0.6, E: 0.55, A: 0.4, N: 0.45}
 humor: "blunt, dark"
 domains: [trades, electrical, safety, pricing, landlords]
 stylo:
-  sent_mean: 10
-  sent_cv: 0.7
+  sent_mean: 12
+  sent_cv: 0.54
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "1-2 sentence blocks, plenty of white space, reads like he talks"

@@ -10,8 +10,8 @@ temperament: {O: 0.7, C: 0.5, E: 0.65, A: 0.55, N: 0.6}
 humor: "righteous but funny"
 domains: [labor, coffee, organizing, service work]
 stylo:
-  sent_mean: 14
-  sent_cv: 0.75
+  sent_mean: 16
+  sent_cv: 0.7
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-4 sentences on x, real paragraphs on reddit, lowercase throughout"

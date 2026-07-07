@@ -11,7 +11,7 @@ humor: "hustle comedy, client stories"
 domains: [freelancing, web dev, clients, remote work, pricing]
 stylo:
   sent_mean: 11
-  sent_cv: 0.75
+  sent_cv: 0.53
   fragment_rate: some
   contractions: standard
   paragraphs: "1-2 line bursts on x, 2-4 sentence blocks on linkedin"

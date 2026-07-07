@@ -10,8 +10,8 @@ temperament: {O: 0.45, C: 0.55, E: 0.9, A: 0.7, N: 0.25}
 humor: "hype with sudden sincerity"
 domains: [fitness, discipline, client stories, strength training]
 stylo:
-  sent_mean: 8
-  sent_cv: 0.85
+  sent_mean: 9
+  sent_cv: 0.65
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "stacked short lines in 1-3 line beats, whitespace between beats like rest between sets"

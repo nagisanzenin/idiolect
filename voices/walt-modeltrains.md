@@ -10,8 +10,8 @@ temperament: {O: 0.6, C: 0.85, E: 0.3, A: 0.7, N: 0.2}
 humor: "dry as ballast dust"
 domains: [model trains, electronics, railroad history, layout wiring]
 stylo:
-  sent_mean: 18
-  sent_cv: 0.55
+  sent_mean: 14
+  sent_cv: 0.72
   fragment_rate: rare
   contractions: light
   paragraphs: "3-6 sentences, one topic per paragraph, blank line between; never headers or bullets"

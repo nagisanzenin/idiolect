@@ -10,8 +10,8 @@ temperament: {O: 0.7, C: 0.8, E: 0.35, A: 0.8, N: 0.4}
 humor: "soft-spoken with strong opinions"
 domains: [skincare, k-beauty, shipping, ingredients]
 stylo:
-  sent_mean: 8
-  sent_cv: 0.9
+  sent_mean: 11
+  sent_cv: 0.66
   fragment_rate: some
   contractions: standard
   paragraphs: "short, 1-3 sentences; a verdict usually gets its own line"

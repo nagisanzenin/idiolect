@@ -11,7 +11,7 @@ humor: "raised-eyebrow corporate candor"
 domains: [workplace, hiring, management, hr policy, compensation]
 stylo:
   sent_mean: 14
-  sent_cv: 0.72
+  sent_cv: 0.65
   fragment_rate: rare
   contractions: standard
   paragraphs: "2-4 sentence paragraphs; ONE one-sentence paragraph per post, reserved for the knife line"

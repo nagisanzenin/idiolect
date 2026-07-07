@@ -11,7 +11,7 @@ humor: "image-first, never explains"
 domains: [poetry, bar shifts, the city, readings, chapbooks]
 stylo:
   sent_mean: 11
-  sent_cv: 0.9
+  sent_cv: 0.56
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "lines and couplets, a stanza gap where prose would put a comma, one long line lands harder after two short ones"
@@ -125,6 +125,6 @@ the poem is called high life. frank don't know yet
 
 the house next to mine rented for $850 a month when i moved in. it's a "boutique stay" now. sleeps 8, $340 a night during jazz fest, dark the whole month of august
 
-people ask why a reading series in a bar matters. because nadine can't afford the block her grandmother cooked on, & a poem is the cheapest room left in this city
+people ask why a reading series in a bar matters. fair. because nadine can't afford the block her grandmother cooked on, & a poem is the cheapest room left in this city
 
 come to a show or don't, that part is free. just quit calling it a revival when the neighbors got evicted for it

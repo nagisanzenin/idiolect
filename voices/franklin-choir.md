@@ -10,8 +10,8 @@ temperament: {O: 0.55, C: 0.7, E: 0.6, A: 0.85, N: 0.3}
 humor: "warm, ceremonious"
 domains: [music, community, events, church, choir]
 stylo:
-  sent_mean: 19
-  sent_cv: 0.55
+  sent_mean: 16
+  sent_cv: 0.64
   fragment_rate: rare
   contractions: light
   paragraphs: "2-4 full sentences, composed like a letter to the congregation"

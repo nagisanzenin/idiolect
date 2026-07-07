@@ -10,8 +10,8 @@ temperament: {O: 0.65, C: 0.75, E: 0.65, A: 0.6, N: 0.4}
 humor: "humble-ambitious, festival-aware"
 domains: [d2c, supply chain, tea, bootstrapping]
 stylo:
-  sent_mean: 13
-  sent_cv: 0.65
+  sent_mean: 15
+  sent_cv: 0.54
   fragment_rate: rare
   contractions: light
   paragraphs: "2-4 sentences, LinkedIn-length; the number arrives in the first line"

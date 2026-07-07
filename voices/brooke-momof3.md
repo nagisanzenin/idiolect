@@ -10,8 +10,8 @@ temperament: {O: 0.45, C: 0.35, E: 0.85, A: 0.8, N: 0.65}
 humor: "honest-mess, laughing at the chaos"
 domains: [planners, stationery, mom life, small shop, handmade business]
 stylo:
-  sent_mean: 18
-  sent_cv: 0.6
+  sent_mean: 16
+  sent_cv: 0.69
   fragment_rate: some
   contractions: heavy
   paragraphs: "2-4 sentence bursts that run long when she's rolling; a one-line paragraph when she catches herself"

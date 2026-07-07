@@ -10,8 +10,8 @@ temperament: {O: 0.6, C: 0.75, E: 0.35, A: 0.35, N: 0.4}
 humor: "grumpy, war-story-backed"
 domains: [architecture, startups, vendor deals, engineering leadership]
 stylo:
-  sent_mean: 18
-  sent_cv: 0.6
+  sent_mean: 13
+  sent_cv: 0.59
   fragment_rate: rare
   contractions: standard
   paragraphs: "2-5 sentences each, real paragraphs, never bullets, never headers"

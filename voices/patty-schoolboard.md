@@ -10,8 +10,8 @@ temperament: {O: 0.4, C: 0.75, E: 0.55, A: 0.6, N: 0.5}
 humor: "unintentional, occasionally lethal"
 domains: [school board, community, events, local government]
 stylo:
-  sent_mean: 16
-  sent_cv: 0.6
+  sent_mean: 13
+  sent_cv: 0.62
   fragment_rate: rare
   contractions: light
   paragraphs: "2-4 sentences with a blank line between; the last paragraph is often unrelated"

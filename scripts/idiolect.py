@@ -259,8 +259,39 @@ def words_of(text):
 
 
 def sentences_of(text):
-    """Regex sentence splitter with a small abbreviation guard. Linter-grade."""
-    text = re.sub(r"\s+", " ", text.replace("\n", " ")).strip()
+    """Regex sentence splitter with a small abbreviation guard. Linter-grade.
+
+    Line breaks are terminal punctuation in social registers (McCulloch 2019):
+    a short line without end punctuation is a deliberate beat and counts as a
+    sentence. The exception is hard-wrapped prose from editors — a LONG line
+    (>=60 chars) ending mid-clause whose next line continues in lowercase is a
+    soft wrap and joins. Blank lines are always boundaries.
+    """
+    out = []
+    lines = text.splitlines()
+    buf = ""
+    for i, raw in enumerate(lines):
+        line = raw.strip()
+        if not line:
+            if buf:
+                out.extend(_sentences_of_line(buf))
+                buf = ""
+            continue
+        buf = (buf + " " + line) if buf else line
+        nxt = lines[i + 1].strip() if i + 1 < len(lines) else ""
+        soft_wrap = (not re.search(r"[.!?…:][\"'\)\]]*$", line)
+                     and len(line) >= 60
+                     and bool(re.match(r"^[a-z0-9]", nxt)))
+        if not soft_wrap:
+            out.extend(_sentences_of_line(buf))
+            buf = ""
+    if buf:
+        out.extend(_sentences_of_line(buf))
+    return out
+
+
+def _sentences_of_line(text):
+    text = re.sub(r"\s+", " ", text).strip()
     if not text:
         return []
     parts, buf = [], ""

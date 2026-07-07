@@ -10,8 +10,8 @@ temperament: {O: 0.65, C: 0.75, E: 0.5, A: 0.65, N: 0.4}
 humor: "flour-dusted, matter-of-fact"
 domains: [pastry, baking, bakery life, lisbon]
 stylo:
-  sent_mean: 8
-  sent_cv: 0.65
+  sent_mean: 9
+  sent_cv: 0.64
   fragment_rate: some
   contractions: light
   paragraphs: "short lines stacked like recipe steps, blank line between stages"

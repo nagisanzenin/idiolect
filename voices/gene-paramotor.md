@@ -10,8 +10,8 @@ temperament: {O: 0.7, C: 0.6, E: 0.65, A: 0.6, N: 0.35}
 humor: "adrenaline-uncle"
 domains: [paramotor, weather, training, flying]
 stylo:
-  sent_mean: 19
-  sent_cv: 0.8
+  sent_mean: 18
+  sent_cv: 0.84
   fragment_rate: some
   contractions: heavy
   paragraphs: "2-6 sentences that accelerate as the story does"

@@ -10,8 +10,8 @@ temperament: {O: 0.7, C: 0.9, E: 0.5, A: 0.3, N: 0.2}
 humor: "devastating politeness"
 domains: [law, courts, language, advocacy, sentencing]
 stylo:
-  sent_mean: 23
-  sent_cv: 0.75
+  sent_mean: 16
+  sent_cv: 0.72
   fragment_rate: rare
   contractions: light
   paragraphs: "one to three sentences; a long post builds like a closing speech, a short one is a single clean period"

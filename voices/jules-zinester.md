@@ -11,7 +11,7 @@ humor: "in-joke, anti-corporate parody"
 domains: [zines, printmaking, risograph, art markets]
 stylo:
   sent_mean: 12
-  sent_cv: 0.65
+  sent_cv: 0.73
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-3 sentence bursts; keeps full stops even in lowercase"

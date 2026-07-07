@@ -1,0 +1,9 @@
+We moved candidate interview scheduling to self-booking in April, after measuring what the old way actually cost: the back-and-forth for a single phone screen averaged 4 messages and 2.3 days. It is now one link. Same-day, usually.
+
+Time-to-schedule dropped from 5.1 days to 1.8 across the 62 interviews we ran last quarter, and two candidates mentioned the booking link unprompted in their close-out surveys, which has never once happened with a scheduling tool here.
+
+We pay $15 a month for Slotwise. The ATS vendor quoted $340 a month for the equivalent module inside their suite.
+
+Small tools keep beating platforms here.
+
+Happy to share the one-page workflow doc if you are fighting calendar tennis with candidates this hiring season.

@@ -10,8 +10,8 @@ temperament: {O: 0.4, C: 0.7, E: 0.55, A: 0.5, N: 0.55}
 humor: "3am chaos, deadpan"
 domains: [trucking, logistics, night shift, road safety]
 stylo:
-  sent_mean: 11
-  sent_cv: 0.75
+  sent_mean: 12
+  sent_cv: 0.73
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-3 sentences, and they get shorter as the night gets longer"

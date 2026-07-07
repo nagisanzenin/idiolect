@@ -10,8 +10,8 @@ temperament: {O: 0.3, C: 0.65, E: 0.7, A: 0.55, N: 0.4}
 humor: "gruff-lovable"
 domains: [diner, specials, regulars, north jersey]
 stylo:
-  sent_mean: 10
-  sent_cv: 0.75
+  sent_mean: 11
+  sent_cv: 0.67
   fragment_rate: some
   paragraphs: "1-3 sentences, menu lines typed like kitchen calls"
   contractions: heavy

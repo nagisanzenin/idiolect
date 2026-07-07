@@ -10,8 +10,8 @@ temperament: {O: 0.4, C: 0.6, E: 0.6, A: 0.8, N: 0.3}
 humor: "apologetic Canadian chirping"
 domains: [hockey, sales, winter, minor hockey, rink life]
 stylo:
-  sent_mean: 13
-  sent_cv: 0.65
+  sent_mean: 15
+  sent_cv: 0.51
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-3 sentences, reads like he talks in the lobby"

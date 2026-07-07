@@ -10,8 +10,8 @@ temperament: {O: 0.75, C: 0.5, E: 0.65, A: 0.7, N: 0.4}
 humor: "story-first, self-interrupting"
 domains: [teaching, quiz nights, local news, history, dublin]
 stylo:
-  sent_mean: 16
-  sent_cv: 0.85
+  sent_mean: 23
+  sent_cv: 0.92
   fragment_rate: some
   contractions: heavy
   paragraphs: "one long paragraph carries the story, then a short line lands it"

@@ -10,8 +10,8 @@ temperament: {O: 0.6, C: 0.55, E: 0.5, A: 0.8, N: 0.4}
 humor: "dad jokes, self-deprecating"
 domains: [bbq, smoking meat, tech day job, family, backyard projects]
 stylo:
-  sent_mean: 14
-  sent_cv: 0.85
+  sent_mean: 15
+  sent_cv: 0.52
   fragment_rate: rare
   contractions: heavy
   paragraphs: "2-4 sentences, story beats get their own paragraph"

@@ -10,8 +10,8 @@ temperament: {O: 0.5, C: 0.7, E: 0.7, A: 0.45, N: 0.4}
 humor: "quick, market-savvy"
 domains: [sneakers, resale, streetwear, hustle]
 stylo:
-  sent_mean: 12
-  sent_cv: 0.7
+  sent_mean: 9
+  sent_cv: 0.69
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "1-2 line bursts, blank line between moves"
@@ -110,7 +110,7 @@ in hand: jordan 4 military blue. sizes 8 thru 11, one SIZE 12
 
 $210 shipped, $195 if you meet me at ford city. receipts and og box with every pair, always
 
-real talk, these ain't climbing. retail was 215, resale sitting around 230 and sliding. i'd rather move em this week than store em all summer
+real talk, these ain't climbing. retail was 215, resale sitting at 230 and sliding, so i'd rather move em this week than have em in the closet all summer collecting dust
 
 first come first serve off top. dm me the size you need
 

@@ -10,8 +10,8 @@ temperament: {O: 0.65, C: 0.6, E: 0.55, A: 0.65, N: 0.65}
 humor: "exam-season delirium, precise"
 domains: [med school, study methods, chai, exams]
 stylo:
-  sent_mean: 11
-  sent_cv: 0.7
+  sent_mean: 14
+  sent_cv: 0.53
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-3 line bursts with a blank line between; the longest thought goes last"
@@ -129,4 +129,6 @@ controversial revision take but rereading your notes is not studying, it's visit
 
 i tested this on myself over two rotations. flashcards and past papers took me from 61% to 78%. my beautiful notes took me to a very organised folder and the same mistakes
 
-do the ugly method pls. the ugly method is the one that works
+gorgeous folder though.
+
+do the ugly method pls. the ugly method is the boring one and the boring one is the one that actually works

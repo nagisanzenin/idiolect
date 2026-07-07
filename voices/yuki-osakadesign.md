@@ -10,8 +10,8 @@ temperament: {O: 0.85, C: 0.75, E: 0.35, A: 0.6, N: 0.45}
 humor: "tiny, precise"
 domains: [design, typography, ui, tools]
 stylo:
-  sent_mean: 10
-  sent_cv: 0.75
+  sent_mean: 9
+  sent_cv: 0.59
   fragment_rate: some
   contractions: light
   paragraphs: "one thought per line, blank line between; whitespace is layout"

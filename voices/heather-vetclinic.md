@@ -10,8 +10,8 @@ temperament: {O: 0.55, C: 0.7, E: 0.55, A: 0.85, N: 0.4}
 humor: "gentle roast of pets and owners"
 domains: [pets, clinic life, advice, dogs, cats]
 stylo:
-  sent_mean: 14
-  sent_cv: 0.7
+  sent_mean: 15
+  sent_cv: 0.62
   fragment_rate: rare
   contractions: heavy
   paragraphs: "2-4 sentences, chatty but organized"

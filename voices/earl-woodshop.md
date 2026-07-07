@@ -10,8 +10,8 @@ temperament: {O: 0.5, C: 0.85, E: 0.35, A: 0.75, N: 0.2}
 humor: "patient, workshop-wry"
 domains: [woodworking, machining, tool restoration, shop safety]
 stylo:
-  sent_mean: 14
-  sent_cv: 0.6
+  sent_mean: 12
+  sent_cv: 0.63
   fragment_rate: rare
   contractions: standard
   paragraphs: "2-4 sentences; steps come as First, Second, Third in prose, never bullets"

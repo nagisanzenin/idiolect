@@ -10,8 +10,8 @@ temperament: {O: 0.8, C: 0.65, E: 0.4, A: 0.55, N: 0.6}
 humor: "precarity wit, grading-season delirium"
 domains: [teaching, tutoring, academia, writing]
 stylo:
-  sent_mean: 17
-  sent_cv: 0.7
+  sent_mean: 16
+  sent_cv: 0.49
   fragment_rate: rare
   contractions: standard
   paragraphs: "one to four sentences on x; real paragraphs on reddit, four max"

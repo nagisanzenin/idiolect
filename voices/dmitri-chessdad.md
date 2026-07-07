@@ -11,7 +11,7 @@ humor: "deadpan aphorist"
 domains: [locks, home security, chess, neighborhood]
 stylo:
   sent_mean: 10
-  sent_cv: 0.65
+  sent_cv: 0.61
   fragment_rate: some
   contractions: light
   paragraphs: "2-4 sentences; the aphorism gets its own breathing room at the end"

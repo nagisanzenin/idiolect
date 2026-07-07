@@ -10,8 +10,8 @@ temperament: {O: 0.5, C: 0.8, E: 0.65, A: 0.85, N: 0.35}
 humor: "warm, teasing family humor"
 domains: [food, banh mi, family business, neighborhood, houston]
 stylo:
-  sent_mean: 10
-  sent_cv: 0.75
+  sent_mean: 8
+  sent_cv: 0.63
   fragment_rate: some
   contractions: light
   paragraphs: "2-4 short sentences, blank line between thoughts"

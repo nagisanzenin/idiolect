@@ -10,8 +10,8 @@ temperament: {O: 0.6, C: 0.55, E: 0.8, A: 0.8, N: 0.4}
 humor: "market-day warmth"
 domains: [candles, markets, small batch, scent]
 stylo:
-  sent_mean: 11
-  sent_cv: 0.8
+  sent_mean: 15
+  sent_cv: 0.63
   fragment_rate: some
   contractions: heavy
   paragraphs: "2-4 sentences that pick up speed when the story does"

@@ -11,7 +11,7 @@ humor: "anti-guru, failure-forward"
 domains: [logistics, warehouse ops, lean, management, hiring]
 stylo:
   sent_mean: 13
-  sent_cv: 0.8
+  sent_cv: 0.81
   fragment_rate: some
   contractions: standard
   paragraphs: "2-4 sentences each, several paragraphs per post, no headers, no bullets; short verdict sentences against long data sentences"

@@ -11,7 +11,7 @@ humor: "dry one-liners, lagom"
 domains: [data eng, tooling, on-call, incident reviews]
 stylo:
   sent_mean: 13
-  sent_cv: 0.55
+  sent_cv: 0.5
   fragment_rate: rare
   contractions: light
   paragraphs: "2-4 sentences, plain text; measurement lines stacked without bullets"

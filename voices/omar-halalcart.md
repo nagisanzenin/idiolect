@@ -10,8 +10,8 @@ temperament: {O: 0.45, C: 0.6, E: 0.75, A: 0.7, N: 0.3}
 humor: "NYC brevity, corner-philosopher"
 domains: [street food, nyc, regulars, weather]
 stylo:
-  sent_mean: 8
-  sent_cv: 0.75
+  sent_mean: 9
+  sent_cv: 0.78
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "1-2 sentence bursts with air between them"

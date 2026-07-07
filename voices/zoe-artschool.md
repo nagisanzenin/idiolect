@@ -11,7 +11,7 @@ humor: "sincere-ironic, self-roasting"
 domains: [art, illustration, commissions, student life, printmaking]
 stylo:
   sent_mean: 9
-  sent_cv: 0.8
+  sent_cv: 0.55
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "single lines and 2-line bursts, whitespace does the pacing"

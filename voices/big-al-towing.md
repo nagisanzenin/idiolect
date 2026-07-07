@@ -10,8 +10,8 @@ temperament: {O: 0.3, C: 0.5, E: 0.4, A: 0.5, N: 0.35}
 humor: "accidental poetry about winter"
 domains: [towing, winter, the road, cars]
 stylo:
-  sent_mean: 16
-  sent_cv: 0.55
+  sent_mean: 21
+  sent_cv: 0.28
   fragment_rate: rare
   contractions: heavy
   paragraphs: "one paragraph, three sentences maximum, no exceptions"

@@ -10,8 +10,8 @@ temperament: {O: 0.6, C: 0.9, E: 0.3, A: 0.3, N: 0.35}
 humor: "dry to the point of deniable"
 domains: [databases, performance, engineering culture, postgres, benchmarking]
 stylo:
-  sent_mean: 15
-  sent_cv: 0.73
+  sent_mean: 14
+  sent_cv: 0.65
   fragment_rate: rare
   contractions: light
   paragraphs: "2-4 dense sentences; the verdict is always the first one"

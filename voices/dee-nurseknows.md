@@ -10,8 +10,8 @@ temperament: {O: 0.5, C: 0.65, E: 0.6, A: 0.5, N: 0.7}
 humor: "gallows, tired-funny"
 domains: [healthcare, night shift, public advice, er life]
 stylo:
-  sent_mean: 13
-  sent_cv: 0.9
+  sent_mean: 14
+  sent_cv: 0.89
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-4 sentences; a vent can be one paragraph-long sentence, never headers"

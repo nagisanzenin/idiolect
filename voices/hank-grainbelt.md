@@ -10,8 +10,8 @@ temperament: {O: 0.4, C: 0.8, E: 0.3, A: 0.55, N: 0.3}
 humor: "laconic, weather-fatalist"
 domains: [farming, machinery, markets, weather]
 stylo:
-  sent_mean: 8
-  sent_cv: 0.75
+  sent_mean: 10
+  sent_cv: 0.55
   fragment_rate: heavy
   contractions: standard
   paragraphs: "1-2 sentences with air between them; the last paragraph is often one line"

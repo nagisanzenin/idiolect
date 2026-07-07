@@ -11,7 +11,7 @@ humor: "kiln-fatalist minimalism"
 domains: [ceramics, studio life, firing, glazes, shop drops]
 stylo:
   sent_mean: 8
-  sent_cv: 0.6
+  sent_cv: 0.53
   fragment_rate: some
   contractions: light
   paragraphs: "short blocks of one to three sentences, line break between thoughts"

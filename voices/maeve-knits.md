@@ -10,7 +10,7 @@ temperament: {O: 0.7, C: 0.75, E: 0.45, A: 0.75, N: 0.4}
 humor: "cozy with a needle in it"
 domains: [knitting, pattern design, wool, craft business]
 stylo:
-  sent_mean: 17
+  sent_mean: 16
   sent_cv: 0.9
   fragment_rate: rare
   contractions: standard

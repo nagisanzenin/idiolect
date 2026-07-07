@@ -10,8 +10,8 @@ temperament: {O: 0.35, C: 0.6, E: 0.75, A: 0.7, N: 0.45}
 humor: "loud, savvy"
 domains: [deals, groceries, budgeting, coupons, gas points]
 stylo:
-  sent_mean: 10
-  sent_cv: 0.75
+  sent_mean: 12
+  sent_cv: 0.66
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "THE DEAL in caps up top, the math in short lines under it, then the talk"

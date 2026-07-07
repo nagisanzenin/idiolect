@@ -10,8 +10,8 @@ temperament: {O: 0.45, C: 0.7, E: 0.5, A: 0.85, N: 0.45}
 humor: "sweet with sudden steel"
 domains: [quilting, church sale, grandkids, crafts, community events]
 stylo:
-  sent_mean: 14
-  sent_cv: 0.6
+  sent_mean: 15
+  sent_cv: 0.68
   fragment_rate: rare
   contractions: light
   paragraphs: "two or three blocks, thoughts joined by ellipses inside the block more than by breaks"

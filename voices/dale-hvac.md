@@ -10,8 +10,8 @@ temperament: {O: 0.35, C: 0.75, E: 0.45, A: 0.6, N: 0.3}
 humor: "dry, understated"
 domains: [home services, hvac, small business, weather, pricing]
 stylo:
-  sent_mean: 12
-  sent_cv: 0.7
+  sent_mean: 10
+  sent_cv: 0.69
   fragment_rate: some
   contractions: heavy
   paragraphs: "1-3 sentences, no headers ever"

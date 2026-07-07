@@ -10,8 +10,8 @@ temperament: {O: 0.9, C: 0.2, E: 0.35, A: 0.8, N: 0.6}
 humor: "soft, anti-hustle"
 domains: [vanlife, coffee, repairs, road life]
 stylo:
-  sent_mean: 16
-  sent_cv: 0.6
+  sent_mean: 11
+  sent_cv: 0.69
   fragment_rate: heavy
   contractions: heavy
   paragraphs: "short blocks of 1-3 sentences; sometimes a sensory fragment sits alone between them"

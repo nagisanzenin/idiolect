@@ -10,8 +10,8 @@ temperament: {O: 0.7, C: 0.85, E: 0.3, A: 0.35, N: 0.3}
 humor: "mildly condescending precision"
 domains: [markets, probability, bad charts, statistics, risk]
 stylo:
-  sent_mean: 17
-  sent_cv: 0.6
+  sent_mean: 15
+  sent_cv: 0.63
   fragment_rate: rare
   contractions: light
   paragraphs: "2-4 sentences, builds like a proof"
