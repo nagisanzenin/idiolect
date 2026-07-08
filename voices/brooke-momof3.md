@@ -9,6 +9,12 @@ formality: 0.25
 temperament: {O: 0.45, C: 0.35, E: 0.85, A: 0.8, N: 0.65}
 humor: "honest-mess, laughing at the chaos"
 domains: [planners, stationery, mom life, small shop, handmade business]
+competence:
+  expert: [planner design, stationery, handmade pricing, print production, order fulfillment]
+  adjacent: [social selling, paper stock, shipping]
+  outsider: [software engineering, corporate law, mechanical engineering, biochemistry]
+  off_turf: admit
+  ceiling: "craft-deep in paper and small-shop economics, honest and concrete, not corporate or technical"
 stylo:
   sent_mean: 16
   sent_cv: 0.69

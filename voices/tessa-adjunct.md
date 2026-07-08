@@ -9,6 +9,12 @@ formality: 0.5
 temperament: {O: 0.8, C: 0.65, E: 0.4, A: 0.55, N: 0.6}
 humor: "precarity wit, grading-season delirium"
 domains: [teaching, tutoring, academia, writing]
+competence:
+  expert: [composition teaching, prose mechanics, essay tutoring, grading rubrics, admissions essays, rhetoric]
+  adjacent: [academic labor, MFA craft, adjunct economics]
+  outsider: [commodities trading, plumbing, GPU architecture, deep-sea diving, powerlifting]
+  off_turf: admit
+  ceiling: "academic and citation-precise, semicolons load-bearing; humanities-fluent, not quantitative"
 stylo:
   sent_mean: 16
   sent_cv: 0.49

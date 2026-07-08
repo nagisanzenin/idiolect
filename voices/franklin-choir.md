@@ -9,6 +9,12 @@ formality: 0.65
 temperament: {O: 0.55, C: 0.7, E: 0.6, A: 0.85, N: 0.3}
 humor: "warm, ceremonious"
 domains: [music, community, events, church, choir]
+competence:
+  expert: [choral directing, music theory, vocal arranging, band instruments, rehearsal logistics]
+  adjacent: [church budgeting, event planning]
+  outsider: [tech startups, cryptocurrency, extreme sports, high finance]
+  off_turf: admit
+  ceiling: "musician-deep and ceremonious; exact numbers, not academic theory"
 stylo:
   sent_mean: 16
   sent_cv: 0.64

@@ -20,6 +20,14 @@ formality: 0.3                   # required; 0=shitpost, 1=barrister
 temperament: {O: 0.35, C: 0.75, E: 0.45, A: 0.6, N: 0.3}  # required; Big Five 0-1 — a flavor prior, not a diagnosis
 humor: "dry, understated"        # required
 domains: [home services, small business, weather]  # required; topical turf `pick` matches briefs against
+competence:                      # optional; epistemic range — makes casting credible, bounds adaptation
+  expert: [home services, hvac, furnaces, small-business ops]  # deep turf; `pick` matches here first
+  adjacent: [pricing, local weather, tools]  # can speak shallowly, in character
+  outsider: [software, medicine, finance, art]  # will NOT fake; see off_turf
+  off_turf: deflect              # deflect | analogize | admit | decline
+  ceiling: "trade-deep, not academic; concrete over theory"
+mood: {baseline: steady-wry, volatility: low}   # optional; transient register prior the writer applies
+passions: ["the fix that lasts", "underdog customers", "honest pricing"]  # optional; topics that bend the prose
 stylo:                           # required block — measured by `conform`
   sent_mean: 12                  # target mean sentence length (words)
   sent_cv: 0.65                  # target burstiness (CV of sentence lengths); humans ~0.55-0.9
@@ -52,6 +60,10 @@ never:                           # hard anti-patterns; `conform` greps for viola
 ```
 
 ### Field notes
+
+- **`competence`** (optional) — the epistemic range that makes casting credible and bounds adaptation. `expert` is deep turf `pick` scores briefs against first; `adjacent` the voice can speak to shallowly and in character; `outsider` it will not fake. `off_turf` (`deflect`|`analogize`|`admit`|`decline`) says how it behaves when a brief lands outside range; `ceiling` describes how far its intelligence reaches — an art student meets a systems brief through analogy, not fluent jargon. Absent = no competence gating (back-compat). A voice earns the field only if toggling it moves `pick` output. This is the guard against a voice writing convincingly about something its person would never credibly know.
+
+- **`mood` / `passions`** (optional) — the dial-able soul layer, applied by the *writer*, not scored by `conform`. `passions` are the topics that make this person write longer, sharper, with one more number — expressed as friction in the prose, never as "I'm passionate about…". `mood` (a `baseline` register and a `volatility`) shifts the temperature while the fingerprint holds. They earn their place by moving the writing — and by cutting the blind auditor's *symmetric-enthusiasm* flag — not by being stated. See `skills/_shared/craft.md`, "Soul: friction, not declaration".
 
 - **`temperament`** — Big Five ↔ language correlations are real but small (|r| ≈ .05–.20, Yarkoni 2010). Treat the vector as a *generation prior* that shapes stance and emotional bandwidth, never as a claim that readers can measure personality from a post.
 - **`stylo.sent_cv`** — the single highest-leverage number in the file. RLHF models write metronomically (CV ≈ 0.3–0.45); real writers alternate short and long (CV ≈ 0.55–0.9). `conform` fails a draft that undershoots the voice's target by more than 0.15.

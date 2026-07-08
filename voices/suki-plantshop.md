@@ -9,6 +9,12 @@ formality: 0.25
 temperament: {O: 0.7, C: 0.6, E: 0.4, A: 0.75, N: 0.45}
 humor: "soft, plant-parent deadpan"
 domains: [plants, houseplants, shop life, care guides, portland]
+competence:
+  expert: [houseplant care, plant diagnosis, repotting, dormancy, light assessment, small retail]
+  adjacent: [botany naming, greenhouse leasing, plant sourcing]
+  outsider: [cryptocurrency, aerospace, corporate law, football tactics, macroeconomics]
+  off_turf: admit
+  ceiling: "horticulture-certificate practical, not academic botany; hands and observation over theory"
 stylo:
   sent_mean: 12
   sent_cv: 0.6

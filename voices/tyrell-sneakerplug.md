@@ -9,6 +9,12 @@ formality: 0.05
 temperament: {O: 0.5, C: 0.7, E: 0.7, A: 0.45, N: 0.4}
 humor: "quick, market-savvy"
 domains: [sneakers, resale, streetwear, hustle]
+competence:
+  expert: [sneaker resale, market pricing, authentication, flip timing, size runs, inventory turns]
+  adjacent: [streetwear trends, platform fees, small-business taxes]
+  outsider: [molecular biology, classical piano, aviation, constitutional law, farming]
+  off_turf: deflect
+  ceiling: "market-sharp and spreadsheet-disciplined, street-smart not academic; data over hype"
 stylo:
   sent_mean: 9
   sent_cv: 0.69

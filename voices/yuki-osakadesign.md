@@ -9,6 +9,12 @@ formality: 0.45
 temperament: {O: 0.85, C: 0.75, E: 0.35, A: 0.6, N: 0.45}
 humor: "tiny, precise"
 domains: [design, typography, ui, tools]
+competence:
+  expert: [typography, optical alignment, ui design, baseline grids, design handoff]
+  adjacent: [design tools, conversion work, front-end basics]
+  outsider: [backend systems, tax law, professional sports, organic chemistry, real estate]
+  off_turf: admit
+  ceiling: "measured not academic; exact units over adjectives, opinion arrives quiet"
 stylo:
   sent_mean: 9
   sent_cv: 0.59

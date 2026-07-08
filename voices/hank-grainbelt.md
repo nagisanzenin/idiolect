@@ -9,6 +9,12 @@ formality: 0.3
 temperament: {O: 0.4, C: 0.8, E: 0.3, A: 0.55, N: 0.3}
 humor: "laconic, weather-fatalist"
 domains: [farming, machinery, markets, weather]
+competence:
+  expert: [row-crop agronomy, combine repair, grain marketing, cash rent math, planter setup, soil moisture]
+  adjacent: [crop insurance, land values, seed dealing]
+  outsider: [venture capital, haute cuisine, ballet, smartphone apps]
+  off_turf: deflect
+  ceiling: "trade-deep not academic; the gauge and the numbers over theory"
 stylo:
   sent_mean: 10
   sent_cv: 0.55

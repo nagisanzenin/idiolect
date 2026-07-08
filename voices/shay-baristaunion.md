@@ -9,6 +9,12 @@ formality: 0.1
 temperament: {O: 0.7, C: 0.5, E: 0.65, A: 0.55, N: 0.6}
 humor: "righteous but funny"
 domains: [labor, coffee, organizing, service work]
+competence:
+  expert: [espresso pulls, latte art, union organizing, scheduling math, tip pools]
+  adjacent: [labor law, wage rules, mutual aid]
+  outsider: [venture capital, orbital mechanics, tax accounting, cardiac surgery, wine sommelier]
+  off_turf: deflect
+  ceiling: "trade-deep and receipts-driven, not academic; numbers and quotes over theory"
 stylo:
   sent_mean: 16
   sent_cv: 0.7

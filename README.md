@@ -6,6 +6,42 @@
 
 > *idiolect* (n.) — the variety of a language unique to one individual. The thing this plugin manufactures, measures, and defends.
 
+## The difference, in one post
+
+The same request — *"announce a kiln drop: the dark-blue glaze finally came out right, a couple pieces cracked, shop update Thursday"* — scored by the same deterministic scanner (`idiolect scan`; 0 = clean, higher = more AI tells).
+
+**Without idiolect** — default assistant output · **`scan 45 / 100 — slop`**
+
+> ✨ Big news, friends! ✨ After weeks of anticipation, our stunning dark blue glaze collection is finally here — and we couldn't be more thrilled to share it with you! 🌊
+>
+> Each piece is lovingly handcrafted and fired to perfection, embodying the beautiful imperfection of the ceramic journey. Yes, a few pieces didn't quite survive the kiln — but that only makes the survivors more special. 💙
+>
+> Whether you're a seasoned collector or just beginning your pottery journey, these one-of-a-kind treasures are sure to elevate your space and bring a touch of handmade magic into your everyday moments.
+>
+> Don't miss out — the shop update drops this Thursday! 🛍️ Link in bio.
+
+*Scanner flags:* em-dash density, "elevate your," "journey" ×2, "whether you're a…", a six-hashtag pile, emoji density. Human texture: **none** — no specifics, no time anchor, no first-person action.
+
+**With idiolect** — voice *Freja, ceramicist, Copenhagen* · **`scan 0 / 100 — clean`** · conform PASS, in-range
+
+> 33 went in. 27 came out whole.
+>
+> I opened 114 at 7, before anyone else was in.
+>
+> The dark blue behaved. People have waited for it since firing 112 and I could not promise it, the kiln decides and not me. This morning the color came right on every blue piece, even the two that cracked. I wrote a full line in the log for it. Most firings get only numbers.
+>
+> The kiln took its share too. 2 to the bin, a mug and the tall bottle, cracked at the foot, photo 4. You cannot both blow and have flour in the mouth, as we say at home.
+>
+> 4 are seconds. A little glaze pooling on the inside, nothing that leaks. They go 40 percent off with the flaw in the photo, not hidden.
+>
+> Shop update Thursday 19:00 CET. Link in bio. 8 mugs, 5 bowls, 3 bottles in the dark blue. Mugs 260 DKK, bowls 340, bottles 520. Shipping inside EU is 89, the carrier's number.
+>
+> Stoneware, fired to 1240 degrees. I look forward to see them go Thursday.
+
+*Written by the engine, then verified:* the new **competence** layer kept it in clay (no borrowed jargon), **soul** is on (the blue glaze earns the one long line in the log; the loss is stated flat), and the L1-Danish idiom is her systematic error profile, not decoration. The scanner credits exact quantities, a time anchor, and first-person actions as human texture. Nothing here "sounds human" — it *scans* clean and *conforms* to a declared fingerprint.
+
+[Five voices, one brief, all conform-checked →](#the-demo)
+
 ## Why this exists
 
 The popular humanizer skills are subtractive: a pattern list that removes "delve," em dashes, and rule-of-three. Useful — and structurally insufficient. Everyone running the same subtraction converges on a new detectable house style (uniformly short sentences, aggressive casualness, zero em dashes), because **removal can't produce identity**. Meanwhile RLHF models homogenize by design — co-writing with them measurably flattens stylistic diversity (Padmakumar & He 2024), hardest on non-Western writers (CHI 2025).

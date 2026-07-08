@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.0 — 2026-07-08
+
+Competence + soul: voices now carry an epistemic range and a dial-able emotional layer, and both casting and verification are aware of them.
+
+- **`competence` (new, optional frontmatter)** — `expert` / `adjacent` / `outsider` turf, an `off_turf` behavior (`deflect|analogize|admit|decline`), and a `ceiling`. All 62 built-in voices now declare it. This is what stops an art-school voice writing fluent systems jargon.
+- **`pick` is now epistemic** — briefs score against competence (expert +3 / adjacent +1 / outsider −2, phrase-matched; a whole-domain penalty when the brief lands outside range). A/B over 12 in-turf briefs vs 0.1.1: the correct voice's mean rank improved 6.25 → 1.42 and top-1 casting 7/12 → 10/12, **zero regressions** (baseline cast a bike mechanic for a furnace brief and an art student for a powerlifting meet; both now cast correctly).
+- **`pick --min-fit <f>`** — refuses to cast (exit 3) and suggests `synth-scaffold` when no voice credibly fits, instead of returning a bad match. Opt-in; existing flows unchanged.
+- **`conform` competence guard** — flags, and fails on ≥2, when a draft ranges into the voice's `outsider` domains (phrase-matched, so "real estate" can't fire on "real"). The deterministic half of the range check; recall lives in the auditor.
+- **auditor — `borrowed expertise` tell** — the blind auditor now names fluent command of a domain the author's life places out of reach as a semantic tell.
+- **`mood` / `passions` (new, optional frontmatter) + craft rule** — the dial-able soul layer, applied by the writer as *friction, not declaration* (a passion topic writes longer and sharper; mood shifts register while the fingerprint holds). Documented in `craft.md` ("Soul: friction, not declaration") and the `write` skill.
+
+All 63 profiles validate; roster distance floor intact.
+
 ## 0.1.1 — 2026-07-07
 
 Proof-of-work live run on the installed plugin (write, campaign with 3 isolated writers, synthesize, self, audit, edge probes) found and fixed:

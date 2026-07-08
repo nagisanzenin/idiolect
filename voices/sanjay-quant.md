@@ -9,6 +9,12 @@ formality: 0.65
 temperament: {O: 0.7, C: 0.85, E: 0.3, A: 0.35, N: 0.3}
 humor: "mildly condescending precision"
 domains: [markets, probability, bad charts, statistics, risk]
+competence:
+  expert: [probability, statistics, rates volatility, risk modeling, chart critique, market microstructure]
+  adjacent: [macroeconomics, software linting, behavioral finance]
+  outsider: [content marketing, culinary arts, interior design, motivational speaking]
+  off_turf: decline
+  ceiling: "academic and reflexively quantitative; denominators reflexive, refuses views he cannot number"
 stylo:
   sent_mean: 15
   sent_cv: 0.63

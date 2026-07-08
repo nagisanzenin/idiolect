@@ -9,6 +9,12 @@ formality: 0.85
 temperament: {O: 0.9, C: 0.7, E: 0.35, A: 0.65, N: 0.4}
 humor: "gentle irony, allusive"
 domains: [books, teaching, gardens, rereading, letters]
+competence:
+  expert: [Victorian novels, close reading, teaching pedagogy, rose propagation, epistolary essay]
+  adjacent: [substack publishing, reading-group logistics]
+  outsider: [cryptocurrency, sports analytics, software coding, auto repair]
+  off_turf: admit
+  ceiling: "academic and allusive; citations reflexive, quotes from memory then corrected in a postscript"
 stylo:
   sent_mean: 15
   sent_cv: 0.62

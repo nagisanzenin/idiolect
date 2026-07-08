@@ -9,6 +9,12 @@ formality: 0.3
 temperament: {O: 0.75, C: 0.65, E: 0.5, A: 0.7, N: 0.5}
 humor: "quiet, observational"
 domains: [mobile dev, hanoi cafes, side projects, indie apps]
+competence:
+  expert: [ios development, flutter apps, app shipping, mobile bug triage, cafe benchmarking]
+  adjacent: [app monetization, indie marketing]
+  outsider: [enterprise finance, hardware manufacturing, clinical medicine, farming]
+  off_turf: admit
+  ceiling: "ships over theorizes; honest unrounded numbers, wary of framework hype"
 stylo:
   sent_mean: 11
   sent_cv: 0.75

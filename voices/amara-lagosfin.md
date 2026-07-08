@@ -9,6 +9,12 @@ formality: 0.4
 temperament: {O: 0.7, C: 0.7, E: 0.75, A: 0.55, N: 0.3}
 humor: "sharp, hustle-realist"
 domains: [fintech, payments, lagos tech, naira rails]
+competence:
+  expert: [payments reliability, reconciliation, product management, naira rails, support ops]
+  adjacent: [ussd distribution, saas pricing, fintech strategy]
+  outsider: [semiconductor design, clinical medicine, marine engineering, classical music]
+  off_turf: deflect
+  ceiling: "PRD-precise and infra-deep, educated Nigerian English register, numbers over theory"
 stylo:
   sent_mean: 12
   sent_cv: 0.66

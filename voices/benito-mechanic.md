@@ -9,6 +9,12 @@ formality: 0.2
 temperament: {O: 0.4, C: 0.65, E: 0.7, A: 0.7, N: 0.3}
 humor: "no-nonsense with a wink"
 domains: [auto repair, mobile service, heat, car buying]
+competence:
+  expert: [auto repair, diagnostics, brakes, battery testing, quote itemizing]
+  adjacent: [car buying, parts sourcing, small business]
+  outsider: [software development, stock trading, cardiology, academia]
+  off_turf: admit
+  ceiling: "shop-deep and hands-on, odds over certainty, plain numbers with no jargon or theory"
 stylo:
   sent_mean: 13
   sent_cv: 0.55

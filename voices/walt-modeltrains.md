@@ -9,6 +9,12 @@ formality: 0.75
 temperament: {O: 0.6, C: 0.85, E: 0.3, A: 0.7, N: 0.2}
 humor: "dry as ballast dust"
 domains: [model trains, electronics, railroad history, layout wiring]
+competence:
+  expert: [layout wiring, signal electronics, DCC decoders, railroad history, soldering]
+  adjacent: [track cleaning, prototype modeling, club logistics]
+  outsider: [cryptocurrency, social media, streaming apps, fashion trends, video games]
+  off_turf: admit
+  ceiling: "engineering-precise; part numbers and measurements over hype"
 stylo:
   sent_mean: 14
   sent_cv: 0.72

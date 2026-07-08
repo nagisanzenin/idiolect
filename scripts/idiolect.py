@@ -913,9 +913,28 @@ def conform_text(text, fm, platform=None):
             violations.append("never-rule broken: bullet list present")
         if "header" in r and re.search(r"(?m)^#{1,4}\s", text):
             violations.append("never-rule broken: headers present")
+    comp = fm.get("competence") or {}
+    comp_flags = []
+    outsider = comp.get("outsider") or []
+    if outsider:
+        draft_stems = {_stem(t) for t in words_of(low)}
+        for entry in outsider:
+            ewords = [_stem(t) for t in words_of(str(entry).lower()) if len(t) > 2]
+            # Flag an outsider DOMAIN only when all its content words appear, so a
+            # multi-word entry ("real estate") cannot fire on a lone common word
+            # ("real"). Single-word domains still match on that one word.
+            if ewords and all(w in draft_stems for w in ewords):
+                comp_flags.append(str(entry))
+        if len(comp_flags) >= 2:
+            # >=2 distinct outsider domains: the draft has wandered out of this
+            # person's range. One is a note, not a failure. (Recall is the blind
+            # auditor's "borrowed expertise" tell; this layer is deterministic.)
+            violations.append("competence: draft ranges outside voice "
+                              f"(outsider domains: {', '.join(comp_flags[:6])})")
     ok = all(c["ok"] for c in checks) and not violations
     return {"voice": fm["slug"], "pass": ok, "checks": checks,
-            "violations": violations, "stats_words": stats["words"]}
+            "violations": violations, "competence_flags": comp_flags,
+            "stats_words": stats["words"]}
 
 
 def fmt_conform(rep):
@@ -925,6 +944,9 @@ def fmt_conform(rep):
         lines.append(f"  {mark} {c['name']}: target {c['target']}, actual {c['actual']}")
     for v in rep["violations"]:
         lines.append(f"  FAIL {v}")
+    cf = rep.get("competence_flags")
+    if cf and not any(v.startswith("competence:") for v in rep["violations"]):
+        lines.append(f"  ~   competence note: outside-range term(s): {', '.join(cf[:6])}")
     return "\n".join(lines)
 
 
@@ -1228,10 +1250,41 @@ def cmd_pick(args):
                 if _stem(t) in bstems:
                     raw += 2.0 if len(t) >= 6 else 1.0
             score += 1.5 * raw / max(len(dom_toks), 1) * 3
+            comp = fm.get("competence") or {}
+            if comp:
+                def _cstems(key):
+                    ss = set()
+                    for d in (comp.get(key) or []):
+                        ss |= {_stem(t.lower()) for t in words_of(str(d))}
+                    return ss
+                exp, adj = _cstems("expert"), _cstems("adjacent")
+                hit_exp, hit_adj = len(bstems & exp), len(bstems & adj)
+                hit_out = 0
+                for entry in (comp.get("outsider") or []):
+                    ew = [_stem(t.lower()) for t in words_of(str(entry)) if len(t) > 2]
+                    # penalize an outsider DOMAIN only when the brief names all of
+                    # it — a lone shared word ("design") must not sink the voice
+                    if ew and all(w in bstems for w in ew):
+                        hit_out += 1
+                score += 3.0 * hit_exp + 1.0 * hit_adj - 2.0 * hit_out
+                if hit_exp == 0 and hit_adj == 0:
+                    # brief lands outside this voice's competence — don't cast them
+                    score -= 3.0
         if slug in recent:
             score -= 1.0 * (recent.count(slug))
         scored.append((round(score, 3), slug))
     scored.sort(reverse=True)
+    top_fit = scored[0][0] if scored else None
+    if getattr(args, "min_fit", None) is not None and (top_fit is None or top_fit < args.min_fit):
+        msg = {"refuse": True, "top_fit": top_fit, "min_fit": args.min_fit,
+               "reason": "no voice credibly fits this brief",
+               "suggest": "synthesize a voice: idiolect.py synth-scaffold --slug <new>"}
+        if args.json:
+            print(json.dumps(msg, ensure_ascii=False, indent=2))
+        else:
+            print(f"NO CREDIBLE CAST — top fit {top_fit} < min-fit {args.min_fit}")
+            print(f"  {msg['suggest']}")
+        sys.exit(3)
     n = args.n
     picks = []
     if args.distinct and n > 1:
@@ -1405,6 +1458,14 @@ formality: TODO
 temperament: {{O: 0.5, C: 0.5, E: 0.5, A: 0.5, N: 0.5}}
 humor: "TODO"
 domains: [TODO, TODO]
+competence:
+  expert: [TODO]        # deep turf — casting matches briefs here first
+  adjacent: [TODO]      # can speak shallowly, in character
+  outsider: [TODO]      # will NOT fake; see off_turf
+  off_turf: analogize   # deflect | analogize | admit | decline
+  ceiling: "TODO — how far their intelligence reaches; register of expertise"
+mood: {{baseline: TODO, volatility: low}}   # optional; transient register prior
+passions: [TODO]        # optional; topics that bend the prose longer/sharper
 stylo:
   sent_mean: {round(g('sent_mean', 13) or 13)}
   sent_cv: {round(g('sent_cv', 0.65) or 0.65, 2)}
@@ -1668,6 +1729,8 @@ def main():
                     help="greedy max-distance set instead of pure top-N")
     sp.add_argument("--exclude", nargs="*")
     sp.add_argument("--recent-window", type=int, default=10)
+    sp.add_argument("--min-fit", type=float,
+                    help="refuse (exit 3) and suggest synth if best fit is below this")
     sp.add_argument("--json", action="store_true")
     sp.set_defaults(fn=cmd_pick)
 

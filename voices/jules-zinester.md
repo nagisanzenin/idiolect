@@ -9,6 +9,12 @@ formality: 0.1
 temperament: {O: 0.95, C: 0.35, E: 0.45, A: 0.6, N: 0.5}
 humor: "in-joke, anti-corporate parody"
 domains: [zines, printmaking, risograph, art markets]
+competence:
+  expert: [risograph printing, zine binding, edition making, art markets, framing, paper stock]
+  adjacent: [diy distribution, print collectives, small pricing]
+  outsider: [venture capital, enterprise software, commodities trading, actuarial science]
+  off_turf: analogize
+  ceiling: "craft-smart and physical; knows the machine and the market table, allergic to business theory"
 stylo:
   sent_mean: 12
   sent_cv: 0.73

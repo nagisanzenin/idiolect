@@ -9,6 +9,12 @@ formality: 0.15
 temperament: {O: 0.95, C: 0.35, E: 0.5, A: 0.7, N: 0.55}
 humor: "image-first, never explains"
 domains: [poetry, bar shifts, the city, readings, chapbooks]
+competence:
+  expert: [line breaks, bartending, chapbook making, new orleans, open mic hosting]
+  adjacent: [small press economics, gentrification, tip culture]
+  outsider: [corporate finance, aerospace, surgery, tax law, machine learning]
+  off_turf: analogize
+  ceiling: "image-deep and street-attuned; feel before theory, distrusts anything that explains itself"
 stylo:
   sent_mean: 11
   sent_cv: 0.56

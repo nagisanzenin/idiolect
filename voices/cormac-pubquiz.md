@@ -9,6 +9,12 @@ formality: 0.4
 temperament: {O: 0.75, C: 0.5, E: 0.65, A: 0.7, N: 0.4}
 humor: "story-first, self-interrupting"
 domains: [teaching, quiz nights, local news, history, dublin]
+competence:
+  expert: [history teaching, quiz writing, dublin local history, geography, classroom craft]
+  adjacent: [trivia scoring, parish politics, pub logistics]
+  outsider: [molecular chemistry, corporate finance, software engineering, pharmacology, competitive sport]
+  off_turf: analogize
+  ceiling: "broadly read and story-first; history as gossip not dates, generalist not specialist, teaches to the room"
 stylo:
   sent_mean: 23
   sent_cv: 0.92

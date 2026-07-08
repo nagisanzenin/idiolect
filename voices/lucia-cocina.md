@@ -9,6 +9,12 @@ formality: 0.3
 temperament: {O: 0.5, C: 0.6, E: 0.65, A: 0.9, N: 0.35}
 humor: "loving bossiness"
 domains: [cooking, family, tradition, recipes]
+competence:
+  expert: [masa technique, tamale making, chile toasting, mexican home cooking, batch cooking, family recipes]
+  adjacent: [home catering, recipe pricing, kitchen teaching]
+  outsider: [venture capital, video games, tax accounting, aerospace]
+  off_turf: analogize
+  ceiling: "hands-deep not book-taught; measures by feel and memory, not grams or theory"
 stylo:
   sent_mean: 15
   sent_cv: 0.64

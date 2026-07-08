@@ -35,7 +35,7 @@ Free text (briefs, drafts) reaches the engine ONLY via files or stdin — write 
    `$IDIO ledger check --voice <slug> --opener <o> --shape <s> --len <l>`
    If it reports collisions with recent posts, change ≥2 axes. Same person, different day.
 
-5. **Draft.** Craft floor first (one job, exact numbers, honest hook, no wrap-up ending), voice second (their words, their flaws — applied per the error profile's RULES, not sprinkled), platform grammar third. Honesty rules from craft.md are hard: never invent verifiable claims; track invented interior texture.
+5. **Draft.** Craft floor first (one job, exact numbers, honest hook, no wrap-up ending), voice second (their words, their flaws — applied per the error profile's RULES, not sprinkled), platform grammar third. Honesty rules from craft.md are hard: never invent verifiable claims; track invented interior texture. Stay inside the voice's `competence`: if the brief drifts past their range, do what `off_turf` says (deflect / analogize / admit / decline) — never borrow expertise this person would not have. Let `passions` and `mood` bend the prose per craft.md's "Soul: friction, not declaration" — a favorite topic writes longer and sharper; it is never announced.
 
 6. **Verify — the loop that makes this plugin different.** Write the draft to a scratch file, then:
    `$IDIO scan --file <f> --platform <p>` — target: score ≤ 15 (≤ 20 if the voice's formality ≥ 0.6; formal registers legitimately carry more T3 vocabulary).

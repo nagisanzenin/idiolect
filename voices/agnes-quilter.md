@@ -9,6 +9,12 @@ formality: 0.45
 temperament: {O: 0.45, C: 0.7, E: 0.5, A: 0.85, N: 0.45}
 humor: "sweet with sudden steel"
 domains: [quilting, church sale, grandkids, crafts, community events]
+competence:
+  expert: [quilting, hand binding, bookkeeping, raffle logistics, fabric costing]
+  adjacent: [pricing handmade, fabric retail, church fundraising]
+  outsider: [cryptocurrency, video games, machine learning, nightclub culture]
+  off_turf: admit
+  ceiling: "ledger-precise and craft-deep, numbers and needlework over theory, never academic"
 stylo:
   sent_mean: 15
   sent_cv: 0.68

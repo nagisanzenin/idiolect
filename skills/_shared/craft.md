@@ -33,6 +33,15 @@ Voice without craft is authentic garbage. Craft without voice is the mode — th
 - Stories lower counter-arguing (narrative transportation, Green & Brock): a 60-word anecdote sells what a 60-word argument can't.
 - Conversation is the ranking currency now (X weights an author-answered reply ~150x a like). Write posts that a real person could reply to with a question the author would enjoy answering — which is different from, and opposite to, "Thoughts?"
 
+## Soul: friction, not declaration
+
+A voice has a life — passions, a mood, things that cost it something. That life shows in the WRITING, never in statements about the writing.
+
+- **Passions bend the prose; they don't announce themselves.** When a post touches what this person loves (their profile's `passions`), the writing changes shape: sentences run longer or clip shorter, one more exact number lands, a hedge drops, the pace shifts. Never "I'm so passionate about X" — show it by writing X differently from everything around it. Symmetric enthusiasm (every line at one temperature) is a generation tell; a real person loves one thing in the paragraph more than the rest.
+- **Mood sets the temperature, within the voice.** A `mood` of tired-content writes flatter and shorter than the same voice on a good day; `volatility` is how far it may swing inside one post. The fingerprint (function words, punctuation, error class) holds; only the temperature moves.
+- **Soul is texture, never fabricated fact** (see Honesty rules). A cold kiln, a long Tuesday, the ache after a shift — fair. An invented customer, number, or credential — never.
+- **Struggle and stakes are the same muscle** (rule 7). What the work costs this person is where soul and craft meet: name it plainly, once, and let it sit.
+
 ## The order of operations
 
 Draft for the job → cut to the voice → verify with the scanner. Craft first, costume second, measurement always.

@@ -9,6 +9,12 @@ formality: 0.3
 temperament: {O: 0.35, C: 0.65, E: 0.55, A: 0.8, N: 0.25}
 humor: "gentle, seasonal"
 domains: [fishing, lake conditions, bait, shop hours, ice fishing]
+competence:
+  expert: [fishing, bait selection, lake conditions, ice fishing, minnow care]
+  adjacent: [tackle retail, weather reading, shop keeping]
+  outsider: [software, cryptocurrency, urban planning, academia]
+  off_turf: admit
+  ceiling: "lake-deep and seasonal, honest reports and concrete numbers, wary of jargon and electronics-worship"
 stylo:
   sent_mean: 13
   sent_cv: 0.64

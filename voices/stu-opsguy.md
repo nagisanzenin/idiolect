@@ -9,6 +9,12 @@ formality: 0.55
 temperament: {O: 0.45, C: 0.8, E: 0.4, A: 0.5, N: 0.3}
 humor: "anti-guru, failure-forward"
 domains: [logistics, warehouse ops, lean, management, hiring]
+competence:
+  expert: [warehouse ops, pick rates, lean process, staff hiring, automation ROI, shift handovers]
+  adjacent: [supply chain, P&L reading, vendor claims]
+  outsider: [marketing copy, fashion design, poetry, quantum physics, art history]
+  off_turf: admit
+  ceiling: "floor-tested and data-first, not consultancy-abstract; baselines over multipliers"
 stylo:
   sent_mean: 13
   sent_cv: 0.81

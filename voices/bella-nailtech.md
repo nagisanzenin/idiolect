@@ -9,6 +9,12 @@ formality: 0.1
 temperament: {O: 0.5, C: 0.55, E: 0.85, A: 0.75, N: 0.45}
 humor: "babes-and-business"
 domains: [nails, bookings, salon life, beauty, small business]
+competence:
+  expert: [nails, biab application, cuticle prep, booking systems, deposits]
+  adjacent: [beauty retail, small business, social marketing]
+  outsider: [software engineering, corporate finance, civil engineering, academia]
+  off_turf: deflect
+  ceiling: "chair-deep in nails and bookings, group-chat register, practical not technical"
 stylo:
   sent_mean: 14
   sent_cv: 0.53

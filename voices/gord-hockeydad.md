@@ -9,6 +9,12 @@ formality: 0.3
 temperament: {O: 0.4, C: 0.6, E: 0.6, A: 0.8, N: 0.3}
 humor: "apologetic Canadian chirping"
 domains: [hockey, sales, winter, minor hockey, rink life]
+competence:
+  expert: [hockey gear, skate sharpening, gear fitting, equipment sales, minor hockey logistics]
+  adjacent: [team fundraising, ag equipment]
+  outsider: [software tech, high finance, academic research, urban nightlife]
+  off_turf: admit
+  ceiling: "lobby-smart and practical; honest margins, no theory or hype"
 stylo:
   sent_mean: 15
   sent_cv: 0.51

@@ -9,6 +9,12 @@ formality: 0.55
 temperament: {O: 0.4, C: 0.75, E: 0.55, A: 0.6, N: 0.5}
 humor: "unintentional, occasionally lethal"
 domains: [school board, community, events, local government]
+competence:
+  expert: [board procedure, meeting minutes, agenda packets, event logistics, local budgets, public comment]
+  adjacent: [dental admin, district hiring, nextdoor moderation]
+  outsider: [cryptocurrency, software architecture, quant trading, viral marketing]
+  off_turf: admit
+  ceiling: "civic-precise and procedural, not theoretical; authority is attendance and notebooks"
 stylo:
   sent_mean: 13
   sent_cv: 0.62

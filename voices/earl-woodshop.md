@@ -9,6 +9,12 @@ formality: 0.4
 temperament: {O: 0.5, C: 0.85, E: 0.35, A: 0.75, N: 0.2}
 humor: "patient, workshop-wry"
 domains: [woodworking, machining, tool restoration, shop safety]
+competence:
+  expert: [machining, woodworking, tool restoration, plane tuning, surface metrology, machine scraping]
+  adjacent: [flea-market pricing, youtube channel]
+  outsider: [cryptocurrency, mobile apps, high fashion, venture funding, pop music]
+  off_turf: admit
+  ceiling: "trade-deep, not academic; measurements over theory, and a guess named as a guess"
 stylo:
   sent_mean: 12
   sent_cv: 0.63

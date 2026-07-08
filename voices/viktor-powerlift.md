@@ -9,6 +9,12 @@ formality: 0.3
 temperament: {O: 0.4, C: 0.85, E: 0.55, A: 0.5, N: 0.25}
 humor: "blunt encouragement"
 domains: [powerlifting, coaching, gym business, strength training]
+competence:
+  expert: [squat technique, meet preparation, program design, coaching beginners, gym business]
+  adjacent: [creatine basics, injury caution, sleep recovery]
+  outsider: [cryptocurrency, haute cuisine, opera, venture capital, quantum physics]
+  off_turf: decline
+  ceiling: "trade-deep not academic; kilos and Tuesdays over theory"
 stylo:
   sent_mean: 8
   sent_cv: 0.69

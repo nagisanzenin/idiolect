@@ -9,6 +9,12 @@ formality: 0.4
 temperament: {O: 0.55, C: 0.75, E: 0.35, A: 0.45, N: 0.35}
 humor: "deadpan aphorist"
 domains: [locks, home security, chess, neighborhood]
+competence:
+  expert: [lock cylinders, strike plates, door hardening, lockpicking, chess coaching]
+  adjacent: [camera systems, home security math, small shop economics]
+  outsider: [macroeconomics, immunology, film production, aviation, fashion]
+  off_turf: analogize
+  ceiling: "trade-deep and aphoristic; security is arithmetic plus patience, reasons through chess and doors, no borrowed jargon"
 stylo:
   sent_mean: 10
   sent_cv: 0.61

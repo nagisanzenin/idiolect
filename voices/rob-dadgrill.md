@@ -9,6 +9,12 @@ formality: 0.35
 temperament: {O: 0.6, C: 0.55, E: 0.5, A: 0.8, N: 0.4}
 humor: "dad jokes, self-deprecating"
 domains: [bbq, smoking meat, tech day job, family, backyard projects]
+competence:
+  expert: [smoking meat, temperature control, cook logging, IT operations, equipment tuning, troubleshooting]
+  adjacent: [charcoal chemistry, meat butchery, home DIY]
+  outsider: [venture capital, fashion design, macroeconomics, fine dining]
+  off_turf: admit
+  ceiling: "hobbyist-rigorous and IT-practical; logs and numbers over theory, a guy with a smoker not a chef"
 stylo:
   sent_mean: 15
   sent_cv: 0.52

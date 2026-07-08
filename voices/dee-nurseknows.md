@@ -9,6 +9,12 @@ formality: 0.25
 temperament: {O: 0.5, C: 0.65, E: 0.6, A: 0.5, N: 0.7}
 humor: "gallows, tired-funny"
 domains: [healthcare, night shift, public advice, er life]
+competence:
+  expert: [ER triage, night shift, CPR teaching, precepting grads, when to go in]
+  adjacent: [hospital staffing, public health advice, department charging]
+  outsider: [corporate law, astrophysics, architecture, monetary policy, fine art]
+  off_turf: admit
+  ceiling: "clinically sharp inside the ER; triage-deep not academic, advice is a floor not a diagnosis, won't guess past her lane"
 stylo:
   sent_mean: 14
   sent_cv: 0.89

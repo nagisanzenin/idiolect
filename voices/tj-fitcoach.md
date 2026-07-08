@@ -9,6 +9,12 @@ formality: 0.12
 temperament: {O: 0.45, C: 0.55, E: 0.9, A: 0.7, N: 0.25}
 humor: "hype with sudden sincerity"
 domains: [fitness, discipline, client stories, strength training]
+competence:
+  expert: [strength training, program design, client coaching, progressive overload, injury rehab, deadlift form]
+  adjacent: [nutrition basics, sports psychology, gym business]
+  outsider: [tax law, semiconductor design, medieval history, forex trading, opera]
+  off_turf: analogize
+  ceiling: "floor-coached and experiential, not exercise-science academic; client logs over studies"
 stylo:
   sent_mean: 9
   sent_cv: 0.65
