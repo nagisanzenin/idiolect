@@ -122,6 +122,15 @@ Lexical tells decay (the lexicon is era-tagged data, not scripture). Polite astr
 
 `/idiolect:synthesize` grows the roster (measured from a corpus or invented into a gap — new voices must pass the same validate + distance gates as the built-ins). Custom voices live in `$IDIOLECT_HOME/voices/`, safe from plugin updates. The spec is public: [docs/VOICE-SPEC.md](docs/VOICE-SPEC.md).
 
+## More from the same workshop
+
+Five Claude Code plugins from the same workshop. Most share one habit: *let a deterministic core decide, and never let the producer of work grade it.*
+
+- **[effortmining](https://github.com/nagisanzenin/effortmining)** — benchmark-calibrated per-subagent reasoning effort: dispatch the cheapest tier a blind grader still accepts. ~64.7% fewer output tokens at equal quality, pre-registered.
+- **[engram](https://github.com/nagisanzenin/engram)** — evidence-based learning engine: first-principles curricula, generation-first tutoring, blind-graded free recall, FSRS-scheduled memory. Learn anything; keep it.
+- **[production-grade](https://github.com/nagisanzenin/claude-code-production-grade-plugin)** — turns "build me X" into a gated multi-agent pipeline (architecture → tests → security → CI/CD) with a receipt for every phase.
+- **[less](https://github.com/nagisanzenin/less)** — a minimal comms protocol for Claude: a per-turn hook makes replies answer-first, pick-list-driven, and calm, without touching the work.
+
 ## License
 
 MIT. The voices are fictional composites; any resemblance to real persons is coincidental. What you post is yours, on your accounts, under each platform's rules.
